@@ -106,6 +106,24 @@ void PayloadInterpreter::DelegateNative(RE::Actor* a_actor, const std::string_vi
 	case "@SGVI"_h:
 		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::Int);
 		break;
+	case "@GGVB"_h: // Get Graph Variable Bool
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::GetBool);
+		break;
+	case "@GGVF"_h: // Get Graph Variable Float
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::GetFloat);
+		break;
+	case "@GGVI"_h: // Get Graph Variable Int
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::GetInt);
+		break;
+	case "@CGVB"_h: // Copy Graph Variable Bool
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::CopyBool);
+		break;
+	case "@CGVF"_h: // Copy Graph Variable Float
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::CopyFloat);
+		break;
+	case "@CGVI"_h: // Copy Graph Variable Int
+		graphVariableHandler::process(a_actor, &tokens, graphVariableHandler::GRAPHVARIABLETYPE::CopyInt);
+		break;
 	case "@CAST"_h:
 	case "@CASTSPELL"_h:
 		spellCastHandler::process(a_actor, &tokens);

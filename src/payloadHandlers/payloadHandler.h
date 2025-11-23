@@ -38,7 +38,14 @@ public:
 	enum GRAPHVARIABLETYPE {
 		Float = 0,
 		Int,
-		Bool
+		Bool,
+		GetBool,
+		GetFloat,
+		GetInt,
+		CopyBool,
+		CopyFloat,
+		CopyInt
+
 	};
 	static void process(RE::Actor* actor, std::vector<std::string_view>* param, GRAPHVARIABLETYPE graphVariableType);
 
@@ -46,6 +53,18 @@ private:
 	static inline void setGraphVariableBool(RE::Actor* actor, std::vector<std::string_view>* in);
 	static inline void setGraphVariableFloat(RE::Actor* actor, std::vector<std::string_view>* in);
 	static inline void setGraphVariableInt(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void getGraphVariableBool(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void getGraphVariableFloat(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void getGraphVariableInt(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void copyGraphVariableBool(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void copyGraphVariableFloat(RE::Actor* actor, std::vector<std::string_view>* in);
+
+	static inline void copyGraphVariableInt(RE::Actor* actor, std::vector<std::string_view>* in);
 
 
 };

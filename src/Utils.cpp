@@ -101,7 +101,7 @@ bool Utils::string_view::to_uint(std::string_view input, uint32_t& out)
 void Utils::damageav(RE::Actor* a, RE::ActorValue av, float val)
 {
 	if (a) {
-		a->AsActorValueOwner()->RestoreActorValue(RE::ACTOR_VALUE_MODIFIER::kDamage, av, -val);
+		a->AsActorValueOwner()->RestoreActorValue(av, -val);
 	}
 }
 
