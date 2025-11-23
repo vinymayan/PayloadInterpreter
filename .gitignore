@@ -4,6 +4,5 @@ src/bin/_empty.h
 /.vs/PayloadInterpreter/CopilotIndices
 /.vs/PayloadInterpreter/FileContentIndex
 /.vs
-/cmake
-/cmake
-/cmake
+/cmake/lib
+/cmake/ports
