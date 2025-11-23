@@ -1,14 +1,25 @@
 {
-  "name": "payloadinterpreter",
-  "version": "1",
-  "builtin-baseline": "b2cb0da531c2f1f740045bfe7c4dac59f0b2b69c",
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "payloadv2",
+  "version-string": "0.1.0.0",
   "dependencies": [
     "fast-cpp-csv-parser",
     "rsm-binary-io",
-    "simpleini",
     "spdlog",
     "xbyak",
     "rapidcsv",
-    "directxtk"
-  ]
+    "clib-util",
+    "clib-utils-qtr",
+    "skyprompt-api",
+    "directxtk",
+    "skse-mcp",
+    "rapidjson"
+  ],
+  "overrides": [
+    {
+      "name": "fmt",
+      "version": "9.1.0"
+    }
+  ],
+  "builtin-baseline": "78b61582c9e093fda56a01ebb654be15a0033897"
 }

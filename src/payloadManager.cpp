@@ -59,7 +59,7 @@ void payloadManager::delegateNative(RE::Actor* actor, std::string* a_payload) {
 		particleHandler::process(actor, &tokens); break;
 	default:
 		break;
-		payloadHandler::printErrMsg(&tokens, "Invalid instruction.");
+		//payloadHandler::printErrMsg(&tokens, "Invalid instruction.");
 	}
 };
 
